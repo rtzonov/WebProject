@@ -1,0 +1,102 @@
+/* Style the tab buttons */
+*{
+    font-family: Verdana, Calibri;
+    margin: 0;
+    padding: 0;
+}
+.tablink {
+    background-color: #01c534;
+    color: #180fdc;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 26px;
+    width: 25%;
+}
+
+
+/* Set default styles for tab content */
+.tabcontent {
+    background-color: #01c534;
+    color: #180fdc;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+.navigation {
+    background-color: #01c534;
+    color: #180fdc;
+    padding: 5px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation a {
+    text-decoration: none;
+    color: #180fdc;
+
+}
+
+.navigation a:hover {
+    color: #f5023b;
+}
+
+nav {
+    width: 660px;
+    margin: 0 auto 30px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topmenu > li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+.topmenu > li:last-child {
+    margin-right: 0;
+}
+a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    outline: none;
+    font-family: inherit, serif;
+    transition: .5s linear;
+}
+.fa {
+    font-family: inherit;
+    color: inherit;
+    padding-bottom: 20px;
+}
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.navigation ul a {
+    color: #180fdc;
+    padding-top: 0;
+}
+.navigation .submenu {
+    display: none;
+    background: #b19891;
+}
+.navigation ul li:hover .submenu {
+    display: block;
+}
+.submenu li a {
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    color: white;
+}
